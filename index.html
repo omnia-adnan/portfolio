@@ -19,13 +19,14 @@
 <body>
     <header>
     <nav class="navlink">
-        <div class="cont-logo">
-            <a>
-                <img src="/images/lotus.png" alt="Batot" width="70">
-            </a>
-        </div>    
         <div>
-        <ul id="link-list">
+            <a href="javascript:void(0);" class="icon" onclick="showList()" style="font-size: 25px; color:burlywood;" id="show-icon">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="iconclose" onclick="showList()" style="display: none; font-size: 25px; color:burlywood;" id="close-icon">
+                <i class="fa fa-times"></i>
+            </a>
+        <ul id="link-list" style="display: none;">
             <li class="menu-link"><a href="#home">Home</a></li>
             <li class="menu-link"><a href="#about">About</a></li>
             <li class="menu-link"><a href="#Skills">Skills</a></li>
@@ -33,26 +34,25 @@
             <li class="menu-link"><a href="#certificate">Certificate</a></li>
             <li class="menu-link"><a href="#contact">Contact</a></li>
         </ul>
-        <a href="javascript:void(0);" class="icon" onclick="showList()" style="font-size: 25px; color:burlywood;" id="show-icon">
-            <i class="fa fa-bars"></i>
-        </a>
-        <a href="javascript:void(0);" class="iconclose" onclick="showList()" style="display: none; font-size: 25px; color:burlywood;" id="close-icon">
-            <i class="fa fa-times"></i>
-        </a>
-    </div>
-        <!-- <a href="#" onclick="showList()" class="icon">
-            <i></i>
-            <img src="/images/right-align.png" alt="Burger menu" width="35" height="30">
-        </a> -->
+        <ul id="list-big-screen">
+            <li class="menu-link"><a href="#home">Home</a></li>
+            <li class="menu-link"><a href="#about">About</a></li>
+            <li class="menu-link"><a href="#Skills">Skills</a></li>
+            <li class="menu-link"><a href="#Projects">Projects</a></li>
+            <li class="menu-link"><a href="#certificate">Certificate</a></li>
+            <li class="menu-link"><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+        <div class="cont-logo" id="cont-logo">
+            <a>
+                <img src="/images/lotus.png" alt="Batot" width="70">
+            </a>
+        </div>    
         </nav>
     </header>
     <section id="home">
         <div class="hero-main-section">
-            <div class="main-image">
-                <a>
                     <img src="/images/woman 1.jpg" alt="show image">
-                </a>
-                </div>
                 <div id="text">
                 <h2>Front-End Developer</h2>
                 <p>Nice to meet you guys,<br> i'm <span class="name">Omnia Adnan Hussein,</span>

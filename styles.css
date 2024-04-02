@@ -5,40 +5,37 @@
     box-sizing: border-box;
     font-family: "Cormorant Infant", serif;
 }
-.icon, .iconclose{
-    position: fixed;
-    float: right;
-    right: 25px;
-    top: 15px;
-}
-.navlink ul{
-    position: fixed;
-    background-color: rgb(255, 235, 205, 0.5) ;
-    width: auto;
-    border-radius: 8px;
-    float: right;
-    right: 70px ;
+.navlink{
     z-index: 1;
+    width: 100%;
+    position: fixed;
+    padding: 20px 50px;
+}
+.icon, .iconclose{
+    float: left;
+}
+#list-big-screen{
+    display: none;
+}
+.cont-logo{
+    float: right;
+}
+#link-list{
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    padding: 30px 20px;
 } 
-.navlink ul li{
+ul li{
     padding: .6em .7em;
     list-style-type: none;
 }
 
-.navlink ul li a{
+ul li a{
     text-decoration: none;
     text-transform: uppercase;
     color: #70440b;
     transition: .5s ease;
-}
-.navlink ul:hover a:not(:hover){
-    opacity: .01;
-    filter: blur(.1px);
-}
-.cont-logo{
-    position: relative;
-    left: 10px;
-    top: 15px;
 }
 h1,h2, span{
     color: #6b5d0f;
@@ -56,6 +53,18 @@ img{
     display: block;
     max-width: 100%;
 }
+.hero-main-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 4em;
+}
+.hero-main-section img{
+    width: 500px;
+    border: 1px dotted transparent;
+    border-radius: 50%;
+    
+}
 h1 ,.soft-skills{
     text-align: center;
 }
@@ -70,14 +79,6 @@ h1 ,.soft-skills{
 #discreption, #text{
     font-size: clamp(1rem , 2.5vw, 1.5rem);
 }
-/* .navlink ul li{
-    display: none;
-    background-color: white;
-    min-height: 160px;
-    box-shadow: 0px 8px 50px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    }
-    .show {display: block;} */
 .contener-section #downlad{
         margin-top: 1.5em;
         margin-left: 1.8em;
@@ -85,16 +86,13 @@ h1 ,.soft-skills{
         border: 1px dotted  #6b5d0f;
         background-color: #ffebcd;
         padding: 5px;
-    } 
-.soft-skills{
-    padding: 1rem 0;
-}
+} 
 .soft-skills #edu ,ul{
     list-style-type: none;
 }
 .respon-ed-sk{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
 }
 .soft-skills{
     margin: 1rem 2vw;
@@ -102,8 +100,6 @@ h1 ,.soft-skills{
     border-radius: 1rem;
     overflow: hidden;
     padding: 2rem;
-    /* line-height: 1.5; */
-    min-height: 100px;
 }
 .soft-skills h3{
     border-bottom: 1px solid #e0dca5;
@@ -173,6 +169,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
     align-items: center;
     position: relative;
     background: #ffebcd;
@@ -230,17 +227,13 @@ footer ul li:hover{
 
 @media (min-width: 40em) {
 
-.cont-logo{
-    position: absolute;
-    left: 50px;
-    top: 15px;
-} 
-.icon{
+.icon, .iconclose{
     display: none;
 }
-#link-list{
-    display: flex;
+.cont-logo{
+    float: right;
 }
+
 .navlink{
     position: fixed;
     background-color: #ffebcd;
@@ -248,27 +241,21 @@ footer ul li:hover{
     width: 100%;
     z-index: 1;
 } 
-.navlink ul{
+#list-big-screen{
     display: flex;
-    flex-wrap: wrap;
-    float: right;
-    right: 50px;
+    float: left;
     position: relative;
-    top: 18px;
-    gap: 20px;
+    top: 10px;
+    gap: 10px;
 }
-#link-list:active{
-    top: 0;
-} 
 .hero-main-section{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 150px;
+    padding-top: .5em;
+
 }
-.hero-main-section .main-image{
-    width: 500px;
-    border: 1px dotted transparent;
-    border-radius: 50%;
+.hero-main-section img{
     position: relative;
     top: 120px;
     left: 350px;
@@ -276,24 +263,12 @@ footer ul li:hover{
 }
 #text{
     position: absolute;
-    margin-top: 35%;
-    margin-left: 45rem;
+    margin-top: 30%;
+    margin-left: 43rem;
 }
 .contener-section #downlad{
     margin-left: 60em;
 }
-/* .contener-certificate{
-    grid-template-columns: repeat(6,1fr);
-    transition: transform 25px;
-
-}
-.certificate-img:not(:first-child),.Certificate-other-img:not(:first-child){
-    margin-left: 10px;
-}
-
-.certificate-img:hover ~ .certificate-img, .Certificate-other-img ~ .Certificate-other-img{
-    transform: translateX(25px);
-} */
 .card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
