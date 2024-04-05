@@ -23,7 +23,6 @@
         <ul id="link-list" style="display: none;">
             <li class="menu-link"><a href="#home">Home</a></li>
             <li class="menu-link"><a href="#about">About</a></li>
-            <li class="menu-link"><a href="#Skills">Skills</a></li>
             <li class="menu-link"><a href="#Projects">Projects</a></li>
             <li class="menu-link"><a href="#certificate">Certificate</a></li>
             <li class="menu-link"><a href="#contact">Contact</a></li>
@@ -31,7 +30,6 @@
         <ul id="list-big-screen">
             <li class="menu-link"><a href="#home">Home</a></li>
             <li class="menu-link"><a href="#about">About</a></li>
-            <li class="menu-link"><a href="#Skills">Skills</a></li>
             <li class="menu-link"><a href="#Projects">Projects</a></li>
             <li class="menu-link"><a href="#certificate">Certificate</a></li>
             <li class="menu-link"><a href="#contact">Contact</a></li>
@@ -56,8 +54,9 @@
         </div>
     </section>
     <section id="about" class="contener-section">
+        <div class="a">
         <h1 >About Me</h1>
-        <div >
+
             <p id="discreption">As a recent graduate from the University of Technology of Computer seances, 
                     I am excited to begin my career in the field of a front-end developer. 
                     I look forward to putting my education and acquired skills to use. 
@@ -65,41 +64,31 @@
                     developing my skills and gaining valuable experiences.  
                     <span>Thank you for taking the time to visit my portfolio. Have a great day!</span>
             </p>
-            <a  href="/files/Resume.pdf">
-                <button id="downlad">
-                    Download Resume
-                </button>
-            </a>
         </div>
-    </section>
-    <section class="contener-section" id="Skills">
-        <h1>Education And Skills</h1>
-    <div class="respon-ed-sk">
-    <div class="soft-skills">
-        <h3>Education</h3>   
-        <ul id="edu"><li>2019-2023 </li>
-            <li><span>Bachelor of Science</span></li>
-            <li>Science - Software Branch</li>
-            <li>University of Technology</li>
-        </ul>
-    </div>
-    <div class="soft-skills">
-        <h3>Skills Programing</h3>
-        <div id="img-skills">
-        <img src="/images/javascript.webp" alt="JS" width="60" height="70">
-        <img src="/images/logo-2582748_1280.webp" alt="Html" width="60" height="70">
-        <img src="/images/logo-css.webp" alt="CSS" width="60" height="70">
-        </div>
-    </div>
-    <div class="soft-skills">
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Working on Office Programs.</li>
-            <li>Teamwork Skills.</li>
-            <li>Communication Skills.</li>
-        </ul>
-    </div>
-    </div>
+        <div class="respon-ed-sk">
+                <div class="soft-skills  b">
+                <i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 35px;">Education </i>
+                <p id="edu">
+                    2019-2023  <h3>Bachelor of Science</h3> Science - Software Branch University of Technology
+                </p>
+            </div>
+            <div class="soft-skills  c">
+                <i class="fa fa-code" aria-hidden="true" style="font-size: 30px;"> Programing Skills</i>
+                <div id="img-skills">
+                <img src="/images/javascript.webp" alt="JS" width="60" height="70">
+                <img src="/images/logo-2582748_1280.webp" alt="Html" width="60" height="70">
+                <img src="/images/logo-css.webp" alt="CSS" width="60" height="70">
+                </div>
+            </div>
+            <div class="soft-skills   d">
+                <i class="fa fa-cogs" aria-hidden="true" style="font-size: 30px;"> Soft Skills</i>
+                <p>
+                    Teamwork Skills. <br>
+                    Communication Skills. <br>
+                    Working on Office Programs.
+                </p>
+            </div>
+            </div>
     </section>
     <section id="Projects" class="contener-section">
         <h1>Projects</h1>
@@ -127,18 +116,16 @@
     <section id="certificate" class="contener-section">
         <h1>Certificate</h1>
     <div class="contener-certificate">
-            <div class="Certificate-other-img"><img src="./images/Certificate.jpg" alt="certificate job skills"></div>
             <div class="certificate-img"><img src="./images/frount-end introdection.png" alt="frount-end introdection"></div>
             <div class="certificate-img"><img src="./images/version-control.png" alt="version-control"></div>
             <div class="certificate-img"><img src="./images/HTML and CSS.png" alt="HTML and CSS"></div>
             <div class="certificate-img"><img src="./images/Javascript.png" alt="Javascript"></div>
+            <div class="Certificate-other-img"><img src="./images/Certificate.jpg" alt="certificate job skills"></div>
             <div class="Certificate-other-img"><img src="./images/Certificate volunteering.jpg" alt="certificate-volunteering"></div>
     </div>
     </section>
     <footer id="contact">
-        <div>
-            <div class="wave"></div>
-        </div>
+                <div class="contcat-icon">
                 <a href="https://github.com/omnia-adnan" >
                     <i class="fa">&#xf09b;</i>
                 </a>
@@ -151,8 +138,14 @@
                 </a>
                         <p>o.m.a.1514.ja@gmail.com</p>
                 </div>
-                        <p id="copywrite">&copy;2024 Omnia</p>
-
+                </div>
+                <div id="copywrite">
+                    <p >&copy;2024 Omnia adnan</p>
+                    <a  href="/files/Resume.pdf" id="downlad">
+                        <i class="fa fa-arrow-circle-down" aria-hidden="true"> resume</i>
+                    </a>
+                </div>
+                
     </footer>
     <script src="app.js" defer></script>
 </body>
