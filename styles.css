@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -11,24 +10,20 @@
     z-index: 1;
     width: 100%;
     position: fixed;
-    padding: 25px;
     height: 80px;
     background-color: white;
 }
 .icon, .iconclose{
     float: left;
+    padding: 25px;
 }
 #list-big-screen{
     display: none;
-}
-.cont-logo{
-    float: right;
 }
 #link-list{
     background-color: white;
     width: 100%;
     padding: 30px 20px;
-
 } 
 ul li{
     padding: .5em .7em;
@@ -75,11 +70,11 @@ h1 ,.soft-skills{
     padding: 4rem 0;
 }
 #discreption, #text{
-    padding: 1em 1.7em;
+    padding: .7em 1.7em;
     max-width: 60rem;
 }
 #discreption, #text{
-    font-size: clamp(1rem , 2.5vw, 1.7rem);
+    font-size: clamp(1.2rem , 2.5vw, 1.7rem);
 }
 #about{
     display: flex;
@@ -219,9 +214,6 @@ footer {
 .icon, .iconclose{
     display: none;
 }
-.cont-logo{
-    float: right;
-}
 #link-list{
     display: none;
 }
@@ -234,8 +226,11 @@ footer {
 }
 #list-big-screen{
     display: flex;
-    float: left;
-    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 18px;
+    gap: 2rem;
+    font-size: 18px;
 }
 .hero-main-section img{
     margin-left: 60px;
@@ -311,8 +306,6 @@ footer {
         flex-direction: row;
     }
     #text{
-        position: absolute;
-        margin-top: 25%;
-        margin-left: 47%;
+        margin-top: 21.5%;
     }
 }
