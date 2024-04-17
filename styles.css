@@ -6,10 +6,6 @@
     box-sizing: border-box;
     font-family: "Oswald", serif;
 }
-/* .background-image{
-    z-index: -1;
-    position: absolute;
-} */
 .navlink{
     z-index: 1;
     width: 100%;
@@ -42,7 +38,7 @@ ul li a{
     color: #647743;
 }
 h1,h2, span{
-    color: #748655	;
+    color: #583615;
     font-weight: 500;
     line-height: 1;
 }
@@ -59,14 +55,59 @@ img{
 .hero-main-section{
     display: flex;
     flex-direction: column;
+    background-color: rgb(171, 227, 196, .3)    ;
     width: 100%;
-    padding-top: 4em;
+    z-index: -1;
 }
 .hero-main-section img{
-    width: 500px;
+    width: 550px;
     border: 1px dotted transparent;
     border-radius: 50%;
     margin-top: 20px;
+}
+.background-image{
+    background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 15px top 90px ,
+    url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right bottom 100px, 
+    url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 10px top 200px,
+    url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 60px top 100px,
+    url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 238px,
+    url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left bottom 65px,
+    url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left bottom 238px,
+    url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 125px bottom 20px,
+    url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 22px top 210px;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    animation: cartoon 6s ease;
+
+}
+@keyframes cartoon {
+    from {
+        background: 
+        url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 120px top 180px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 35px top 300px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 20px bottom 60px,
+        url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 250px top 500px,
+        url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 100px top 150px,
+        url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 20px top 250px,
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 80px bottom 150px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 250px top 150px,
+        url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 150px top 300px;
+        background-repeat: no-repeat;
+        background-size: 130px, 150px;
+        }
+    to {
+        background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 15px top 90px ,
+        url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right bottom 100px, 
+        url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 10px top 200px,
+        url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 60px top 100px,
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 238px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left bottom 65px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left bottom 238px,
+        url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 125px bottom 20px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 22px top 210px;
+        background-repeat: no-repeat;
+        background-size: 50px;
+    }
 }
 h1 ,.soft-skills{
     text-align: center;
@@ -84,13 +125,14 @@ h1 ,.soft-skills{
 #about{
     display: flex;
     flex-direction: column;
+    background-color: #abe3c4    ;
     margin: 0 auto;
 }
 .card{
     margin: .5rem;
 }
 .soft-skills{
-    margin: 1rem;
+    margin: 1rem 2rem;
     border-radius: 10px;
     border: 1px solid black;
     border-radius: 10px;
@@ -113,7 +155,7 @@ h1 ,.soft-skills{
     transition: .30s ease;
 }
 #downlad{
-    margin: 1rem;
+    margin: 1rem 5.3rem;
     border: 1px double black;
     background-color: #f3f1e8;
 }
@@ -211,7 +253,7 @@ h1 ,.soft-skills{
     }
 footer {
     text-align:center;
-    background: #FAEBD7;
+    background-color: rgb(171, 227, 196, .4) ;
     padding: 1.5em;
 }
 
@@ -228,8 +270,9 @@ footer {
     color:inherit;
     color: #556B2F;
 }
-.contcat-icon > a:hover {
+.contcat-icon > a:hover, #email:hover {
     opacity:0.75;
+    color: #662e0d;
 }
 @media (min-width: 40em) {
 
@@ -247,10 +290,6 @@ footer {
 }
 .navlink{
     position: fixed;
-    background-color: #FAEBD7	;
-    border-bottom-left-radius: 20rem;
-    border-bottom-right-radius: 20rem;
-    box-shadow: 1px 1px 3px rgb(241, 238, 238);
     z-index: 1;
 }
 #list-big-screen{
@@ -260,8 +299,53 @@ footer {
     gap: 1rem;
     font-size: 18px;
 }
+
 .hero-main-section img{
-    margin-left: 50px;
+    margin-left: 35px;
+}
+.background-image{
+    background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 80px top 120px,
+    url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 60px top 200px, 
+    url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 220px top 270px,
+    url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 30px top 350px,
+    url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 250px top 100px,
+    url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 200px top 115px,
+    url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 20px bottom 150px,
+    url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 40px bottom 150px,
+    url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 90px top 320px;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    animation: cartoon 6s ease;
+
+}
+@keyframes cartoon {
+    from {
+        background: 
+        url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 120px top 130px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 70px top 400px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 110px bottom 220px,
+        url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 40px top 200px,
+        url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 250px top 250px,
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 80px bottom 270px,
+        url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 250px top 500px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 250px top 150px,
+        url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 150px top 300px;
+        background-repeat: no-repeat;
+        background-size: 130px, 150px;
+        }
+    to {
+        background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 80px top 120px,
+        url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 60px top 200px, 
+        url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 220px top 270px,
+        url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 30px top 350px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 250px top 100px,
+        url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 200px top 115px,
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 20px bottom 150px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 40px bottom 150px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 90px top 320px;
+        background-repeat: no-repeat;
+        background-size: 60px;
+    }
 }
 #text{
     position: absolute;
@@ -304,7 +388,51 @@ footer {
         margin: 4rem;
     }
     .hero-main-section img{
-        margin-left: 155px;
+        margin-left: 135px;
+    }
+    .background-image{
+        background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 90px top 130px,
+        url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 100px top 250px, 
+        url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 350px top 270px,
+        url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 100px top 400px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 350px top 100px,
+        url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 220px top 125px,
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 100px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 130px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 160px top 320px;
+        background-repeat: no-repeat;
+        background-size: 80px;
+        animation: cartoon 6s ease;
+    
+    }
+    @keyframes cartoon {
+        from {
+            background: 
+            url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 120px top 130px,
+            url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 70px top 400px,
+            url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 110px bottom 220px,
+            url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 40px top 200px,
+            url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 250px top 250px,
+            url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 80px bottom 270px,
+            url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 250px top 500px,
+            url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 250px top 150px,
+            url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 150px top 300px;
+            background-repeat: no-repeat;
+            background-size: 130px, 150px;
+            }
+        to {
+            background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 90px top 130px,
+        url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 100px top 250px, 
+        url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 350px top 270px,
+        url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 100px top 400px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 350px top 100px,
+        url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 220px top 125px,
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 100px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 130px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 160px top 320px;
+        background-repeat: no-repeat;
+        background-size: 80px;
+        }
     }
     #text{
         position: absolute;
@@ -326,16 +454,59 @@ footer {
         margin: 0 17rem;
     }
     .hero-main-section img{
-        margin-left: 370px;
+        margin-left: 250px;
         margin-top: 80px;
+    }
+    .background-image{
+        background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 90px top 130px,
+        url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 130px top 280px, 
+        url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 500px top 300px,
+        url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 222px top 400px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 500px top 150px,
+        url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 300px top 125px,
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 150px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 130px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 160px top 350px;
+        background-repeat: no-repeat;
+        background-size: 90px;
+        animation: cartoon 6s ease;
+    }
+    @keyframes cartoon {
+        from {
+            background: url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 100px top 150px,
+            url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 250px top 500px,
+            url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 320px top 130px,
+            url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 200px top 400px,
+            url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 110px bottom 160px,
+            url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 550px top 200px,
+            url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 520px top 320px,
+            url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 80px bottom 210px,
+            url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 150px top 300px;
+            background-repeat: no-repeat;
+            background-size: 150px;
+        }
+        to {
+            background: 
+            url("https://cdn.pixabay.com/photo/2023/08/07/12/37/onions-8174929_960_720.png") right 130px top 280px, 
+            url("https://cdn.pixabay.com/photo/2024/02/14/20/09/sweet-potato-8574146_1280.png") right 500px top 300px,
+            url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 500px top 150px,
+            url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 300px top 125px,
+            url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 150px,
+            url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 222px top 400px,
+            url("https://cdn.pixabay.com/photo/2014/12/22/00/02/radish-576640_1280.png") left 90px top 130px,
+            url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 130px,
+            url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 160px top 350px;
+            background-repeat: no-repeat;
+            background-size: 90px;
+        }
     }
     #about{
         display: flex;
         flex-direction: row;
     }
     #text{
-        margin-top: 21.5%;
-        margin-left: 56%;
+        margin-top: 23%;
+        margin-left: 50%;
     }
     
 }
