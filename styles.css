@@ -46,7 +46,7 @@ h1{
     font-size: clamp(2rem, 1rem + 10vw, 5rem);
 }
 h1,p, span{
-margin-bottom: .5em ;
+line-height: 1.8;
 }
 img{
     max-width: 100%;
@@ -54,7 +54,7 @@ img{
 .hero-main-section{
     display: flex;
     flex-direction: column;
-    background-color: rgb(171, 227, 196, .3)    ;
+    background-color: rgb(171, 227, 196, .3);
     width: 100%;
     z-index: -1;
 }
@@ -108,20 +108,18 @@ img{
         background-size: 50px;
     }
 }
-h1 ,.soft-skills{
-    text-align: left;
-    padding-left: .5em;
-}
 .contener-section{
-    padding: 4rem 0;
+    padding: 2rem 0;
+}
+.contener-section h1{
+    padding-left: 1.2rem ;
 }
 #text{
     padding-left: 1.3em;
-    font-weight: bold;
 }
 #discreption{
     padding: 0 1em;
-    max-width: 60rem;
+    max-width: 100%;
 }
 #discreption, #text{
     font-size: clamp(1.2rem , 2.5vw, 1.7rem);
@@ -129,17 +127,23 @@ h1 ,.soft-skills{
 #about{
     display: flex;
     flex-direction: column;
-    background-color: #abe3c4    ;
-    margin: 0 5px;
 }
 .card{
     margin: .5rem;
 }
 .soft-skills{
     margin: 1.3rem;
+    padding: 1rem;
     border-radius: 10px;
-    border: 1px dotted black;
-    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px 5px rgba(182, 181, 181, 0.4);
+}
+.soft-skills:hover{
+    background-color: rgb(134, 134, 134, .4);
+}
+#Projects{
+    background-color: rgb(171, 227, 196, .3);
 }
 .project-working{
     display: flex;
@@ -156,9 +160,10 @@ h1 ,.soft-skills{
     transition: .30s ease;
 }
 #downlad{
-    margin: 1rem 5.3rem;
+    margin: 1rem auto;
     border: 1px double black;
     background-color: #f3f1e8;
+    width: 40% ;
 }
 .project-working h3, #downlad{
     display: flex;
@@ -175,7 +180,7 @@ h1 ,.soft-skills{
     content: '';
     position: absolute;
     width: 100%;
-    background-image: linear-gradient(180deg,#c1d1bf,#e4e1d2);
+    background-image: linear-gradient(180deg,#41392e,#dbd8c9);
     height: 100%;
     border-radius: 50%;
     animation: rotBGimg 4s linear infinite;
@@ -230,10 +235,13 @@ h1 ,.soft-skills{
 footer {
     text-align:center;
     display: block;
-    background-color: rgb(171, 227, 196, .4) ;
-    padding: 1.5em;
+    background-color: rgb(171, 227, 196, .3) ;
+    padding: 2em 0;
 }
-
+.title-contact{
+    font-size: clamp(1.7rem, 2vw, 4rem); 
+    padding-bottom: 2.5rem;
+}
 .contcat-icon > a, #email {
     font-size: 1.8rem;
     width:40px;
@@ -328,27 +336,30 @@ footer {
     margin-top: 44%;
     margin-left: 60%;
 }
-#about{
-    margin: 0 1rem;
-}
 .respon-ed-sk{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
+    grid-template-columns: repeat(3, 1fr);
 }
 .card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 4rem;
+    margin: 0 4rem;
     gap: 2rem;
 }
 .contener-certificate{
-    margin: 0 1em;
     grid-template-columns: repeat(3, 1fr);
 }
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+}
+.title-contact{
+    padding: 0;
+    margin-left: -1.3em;
+}
+#downlad{
+    width: 100%;
 }
 }
 @media (min-width: 64em){
@@ -356,8 +367,11 @@ footer {
     .contener-certificate{
         margin: 0 60px ;
     }
-    #about{
-        margin: 1rem;
+    .contener-section h1{
+    padding-left: 5rem ;
+    }
+    #discreption{
+        padding: 0 5rem ;
     }
     .hero-main-section img{
         margin-left: 100px;
@@ -369,9 +383,9 @@ footer {
         url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 100px top 400px,
         url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 350px top 100px,
         url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 220px top 125px,
-        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 100px,
-        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 130px,
-        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 140px top 320px;
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 50px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 60px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 100px top 320px;
         background-repeat: no-repeat;
         background-size: 80px;
         animation: cartoon 6s ease;
@@ -399,9 +413,9 @@ footer {
         url("https://cdn.pixabay.com/photo/2024/03/26/03/45/tomato-8655799_1280.png") right 100px top 400px,
         url("https://cdn.pixabay.com/photo/2022/01/14/00/29/carrot-6936208_960_720.png") left 350px top 100px,
         url("https://cdn.pixabay.com/photo/2012/04/24/16/15/broccoli-40295_1280.png") right 220px top 125px,
-        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 100px,
-        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 130px,
-        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 140px top 320px;
+        url("https://cdn.pixabay.com/photo/2023/06/23/18/55/eggplant-8084013_1280.png") right 50px bottom 50px,
+        url("https://cdn.pixabay.com/photo/2012/04/05/00/40/garlic-25382_1280.png") left 80px bottom 60px,
+        url("https://cdn.pixabay.com/photo/2022/01/14/00/31/mushrooms-6936223_1280.png") left 100px top 320px;
         background-repeat: no-repeat;
         background-size: 80px;
         }
@@ -415,8 +429,15 @@ footer {
     .soft-skills{
         padding: 1.5rem .5rem;
     }
+    .respon-ed-sk{
+        padding: 0 3.5rem ;
+    }
     .card{
         margin: 0 10rem;
+    }
+    .title-contact{
+        padding: 0;
+        margin-left: -.5em;
     }
 }
 @media (min-width: 66em){
@@ -473,19 +494,15 @@ footer {
             background-size: 90px;
         }
     }
-    #about{
-        justify-content: center;
-        flex-direction: row;
-        margin: 1rem;
-    }
     #text{
         margin-top: 25.5%;
         margin-left: 50%;
     }
-    #discreption{
-        padding-right: 15rem;
-    }
     .soft-skills{
-        margin-right: 5rem;
+        padding: 1.5rem ;
+    }
+    .title-contact{
+        padding: 0;
+        margin-left: -4.5em;
     }
 }
